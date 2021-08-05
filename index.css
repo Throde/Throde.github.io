@@ -45,14 +45,14 @@ div.banner {
 }
 div.banner-pic {
     display: inline-block;
-    width: 216px;
+    width: 100%;
     height: 100%;
     text-align: center;
 }
 img.banner-pic {
-    width: auto;
+    width: 100%;
     height: auto;
-    max-height: 100%;
+    min-height: 100%;
 }
 /*标题部分*/
 img#game-titleC {
@@ -60,12 +60,6 @@ img#game-titleC {
     height: 80px;
     bottom: 20px;
     left: 40px;
-}
-img#game-titleE {
-    position: absolute;
-    height: 100px;
-    bottom: 10px;
-    left: 280px;
 }
 div#title-bg {
     position: absolute;
