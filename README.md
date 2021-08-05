@@ -1,2 +1,4 @@
 # throde.github.io
-Throde's personal website!
+My personal website.
+
+Works hub: Knight Throde, Card Legend, and more.
