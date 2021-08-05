@@ -127,6 +127,10 @@ img#QRcode {
     margin-right: 10px;
     margin-top: -80px;
 }
+img#miniprogram {
+    width: 400px;
+    height: auto;
+}
 #tab1-content ul li p a, .inner-link {
     text-decoration: none; color: darkblue;
 }
@@ -257,8 +261,8 @@ img.wallpaper{
     position: relative;
 }
 iframe{
-    width: 832px;
-    height: 576px;
+    width: 800px;
+    height: 450px;
     transform: scale(0.86);
     transform-origin: 0 0;
 }
