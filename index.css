@@ -72,9 +72,10 @@ div#title-bg {
 
 
 /*内容区域*/
-p.small-head {
-    margin-top: 10px;
-    font-weight: bold;
+h3.small-head {
+    margin-top: 15px;
+    margin-bottom: 5px;
+    /*font-weight: bold;*/
 }
 p.parag {
     line-height: 1.4em;
