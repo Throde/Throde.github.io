@@ -75,15 +75,16 @@
                                 <a href="https://mp.weixin.qq.com/s?__biz=MzIwODY2MzMxMA==&mid=2247484417&idx=1&sn=5222b462b6e5922990daa70752ad4bea&chksm=977ee260a0096b760a7b49d81e839a3d5c86f03ac9a5a0795778ab1baac242949bfbdaf26a32&token=763168572&lang=zh_CN#rd" class="inner-link">微信公告</a>。
                                 <br>
                                 游戏的创意由我的女朋友启发而成，感谢我可爱的女朋友在开发过程中的试玩和反馈！
+                                <br>
                                 最后，感谢两位曾参与过美术素材创作的朋友，以及通过Steam对游戏提出宝贵意见的玩家们！
                             </p>
                         </div>
 
-                        <div class="li-box">
+                        <!--<div class="li-box">
                             <p class="small-head">>> 下载链接 Download Links</p>
                             <button type="button" id="more">所有版本</button>
                         </div>
-                        <!--
+                        
                         <ul class="li-box" style="background-color: aliceblue; width: 700px; height: 160px; margin-left: 16px; margin-top: 32px; padding-left: 10px; overflow-y:scroll;">
                             <li>
                                 <p class="dlink"><span>[LATEST] </span> <a href="download/KT_7.3.8.zip" download="KnighThrode_7.3.8.zip">焕焕骑士V7.3.8</a></p>
@@ -152,13 +153,13 @@
                                 <br>
                                 初次启动各个分游戏时，需要下载多媒体资源，可能加载较慢，请耐心等待！
                             </p>
-                            <p class="small-head">>> 操作说明 Instructions</p>
+                            <p class="small-head">>> 操作说明</p>
                             <p class="parag">
                                 不同的游戏可能需要不同的操作方式。
                                 <br>
-                                需要键盘操作时请使用W/A/S/D键控制角色上/下/左/右移动。J键射击。K键跳跃。
+                                勇闯恶龙堡：使用W/A/S/D键控制角色上/下/左/右移动。J键射击。K键跳跃。
                                 <br>
-                                大部分游戏使用鼠标点击或拖拽进行操作。
+                                牙签模拟器、愤怒的小草：使用鼠标点击或拖拽进行操作。
                             </p>
                             <iframe src="web-mobile/index.html"></iframe>
                         </div>
@@ -201,6 +202,24 @@
                                     <p>3_Home and Mate_风和日丽</p>
                                 </li>
                             </ul>-->
+                            <p class="small-head">>> 微信公众号</p>
+                            <p class="parag">
+                                名称：焕焕骑士。
+                                <br>
+                                ID: KnightThrode。
+                            </p>
+
+                            <p class="small-head">>> 哔哩哔哩</p>
+                            <p class="parag">
+                                UP主：光谷小公子。
+                                <br>
+                                uid: 4983755512。
+                            </p>
+
+                            <p class="small-head">>> 知乎</p>
+                            <p class="parag">
+                                用户：光谷小公子。
+                            </p>
                         </div>
                     </div>
 
@@ -211,7 +230,7 @@
             
             <!--信息区域2：侧边资讯栏-->
             <section class="sidebar">
-                <h3 class="small-head">游戏资讯</h3>
+                <h3 class="small-head">游戏作品资讯</h3>
                 <div class="sidebox-chunk">
                     <div class="sidebox">
                         <div><img src="image/cov0.jpg" alt="7.3.8小补丁：吹起号角向前冲！"></div>
@@ -275,23 +294,23 @@
     <!--简易脚本-->
     <script type="text/javascript">
         //********js绑定事件*********
-        let button1 = document.getElementById("more")
-        button1.onclick = function() {
-            //判断操作类型
-            let displayMode = "none"
-            if (button1.innerText=="所有版本") {
-                button1.innerText = "收起"
-                displayMode = "block"
-            } else if (button1.innerText=="收起") {
-                button1.innerText = "所有版本"
-                displayMode = "none"
-            }
-            // 寻找所有并设置
-            var hids = document.getElementsByClassName("hid-item");
-            for (i=0; i<hids.length; i++) {
-                hids[i].style.display = displayMode;
-            }
-        }
+        // let button1 = document.getElementById("more")
+        // button1.onclick = function() {
+        //     //判断操作类型
+        //     let displayMode = "none"
+        //     if (button1.innerText=="所有版本") {
+        //         button1.innerText = "收起"
+        //         displayMode = "block"
+        //     } else if (button1.innerText=="收起") {
+        //         button1.innerText = "所有版本"
+        //         displayMode = "none"
+        //     }
+        //     // 寻找所有并设置
+        //     var hids = document.getElementsByClassName("hid-item");
+        //     for (i=0; i<hids.length; i++) {
+        //         hids[i].style.display = displayMode;
+        //     }
+        // }
 
         //******定义切换标签栏的全局工具函数********
         function switchTag() {
@@ -319,6 +338,7 @@
             tabs[i].onclick = switchTag;
         }
     </script>
+
 
 </body>
 

@@ -57,7 +57,7 @@ img.banner-pic {
 /*标题部分*/
 img#game-titleC {
     position: absolute;
-    height: 80px;
+    height: 100px;
     bottom: 20px;
     left: 40px;
 }
