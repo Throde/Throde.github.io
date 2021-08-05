@@ -1,7 +1,351 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>欢迎来到焕焕骑士的世界！Welcome to the world of Knight Throde!</title>
+    <link rel="stylesheet" href="index.css"/>
+</head>
+
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+    <!--页眉-->
+    <div class="header">
+        <p id="latestversion" class="minor_text">Latest Version：KT_7.3.8</p>
+    </div>
+
+    <!--正文-->
+    <div class="page">
+        <!--组图横幅-->
+        <div class="banner">
+            <div class="banner-pic"><img class="banner-pic" src="image/poster0.jpg" alt=""></div>
+            <div class="banner-pic"><img class="banner-pic" src="image/poster1.jpg" alt=""></div>
+            <div class="banner-pic"><img class="banner-pic" src="image/poster2.jpg" alt=""></div>
+            <div class="banner-pic"><img class="banner-pic" src="image/poster3.jpg" alt=""></div>
+            <div class="banner-pic"><img class="banner-pic" src="image/poster4.jpg" alt=""></div>
+            <div id="title-bg"></div>
+            <img id="game-titleC" src="image/titleC.png">
+            <img id="game-titleE" src="image/titleE.png">
+        </div>
+
+        <!--信息区域-->
+        <div class="container">
+
+            <!--信息区域1：选项卡式导航栏-->
+            <div id="main">
+                <!--一、标题列表-->
+                <div id="title">
+                    <ul>
+                        <li id="tab1" class="content-tab">
+                            <div class="selectli"><span>下载游戏<br>Download Game</span></div>
+                        </li>
+                        <li id="tab2" class="content-tab">
+                            <div><span>游戏信息<br>Info Board</span></div>
+                        </li>
+                        <li id="tab3" class="content-tab">
+                            <div><span>游戏壁纸<br>Wallpapers</span></div>
+                        </li>
+                        <li id="tab4" class="content-tab">
+                            <div><span>上古网页版<br>Ancient Web Version</span></div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!--二、主内容列表-->
+                <div id="content" class="tab1-content">
+                    <div id="tab1-content">
+                        <div class="li-box">
+                            <p class="small-head">>> 下载链接 Download Links</p>
+                            <button type="button" id="more">所有版本</button>
+                        </div>
+                        <ul class="li-box" style="background-color: aliceblue; width: 700px; height: 310px; margin-left: 16px; margin-top: 32px; padding-left: 10px; overflow-y:scroll;">
+                            <li>
+                                <p class="dlink"><span>[LATEST] </span> <a href="download/KT_7.3.8.zip" download="KnighThrode_7.3.8.zip">焕焕骑士V7.3.8</a></p>
+                                <p class="size">82.6M</p>
+                                <p class="time">2021-1-8</p>
+                            </li>
+                            <li>
+                                <p class="dlink"><span>[LATEST] </span> <a href="download/KT_7.3.5.zip" download="KnighThrode_7.3.5.zip">焕焕骑士V7.3.5（2020走进凛冬）</a></p>
+                                <p class="size">83.7M</p>
+                                <p class="time">2020-12-19</p>
+                            </li>
+                            <li>
+                                <p class="dlink"><span>[OLD] </span> <a href="download/KT_7.1.0.zip" download="KnighThrode_7.1.0.zip">焕焕骑士V7.1</a></p>
+                                <p class="size">91.1M</p>
+                                <p class="time">2020-09-12</p>
+                            </li>
+                            <li>
+                                <p class="dlink"><span>[OLD] </span> <a href="download/KT_7.0.zip" download="KnighThrode_7.0.zip">焕焕骑士V7.0</a></p>
+                                <p class="size">151M</p>
+                                <p class="time">2020-08-03</p>
+                            </li>
+                            <!--Unavailable links are set as Hidden items-->
+                            <li class="hid-item">
+                                <p class="dlink"><span>[UNAVAILABLE] </span> 焕焕骑士V6.6</p>
+                                <p class="time">2020-02-13</p>
+                            </li>
+                            <li>
+                                <p class="dlink"><span>[OLD] </span> <a href="download/KT_6.0.zip" download="KnightThrode_6.0.zip">焕焕骑士V6.0</a></p>
+                                <p class="size">138M</p>
+                                <p class="time">2019-07-24</p>
+                            </li>
+                            <li class="hid-item">
+                                <p class="dlink"><span>[UNAVAILABLE] </span> 焕焕骑士V5.8</p>
+                                <p class="time">2019-06-07</p>
+                            </li>
+                            <li class="hid-item">
+                                <p class="dlink"><span>[UNAVAILABLE] </span> 焕焕骑士V5.5</p>
+                                <p class="time">2019-03-21</p>
+                            </li>
+                            <li>
+                                <p class="dlink"><span>[OLD] </span> <a href="download/5.0-TowerJump.7z" download="5.0-TowerJump.7z">焕焕骑士历险记V5.0</a></p>
+                                <p class="size">204M</p>
+                                <p class="time">2019-01-14</p>
+                            </li>
+                            <li>
+                                <p class="dlink"><span>[OLD] </span> <a href="download/焕焕骑士历险记v4.0.7z" download="焕焕骑士历险记v4.0.7z">焕焕骑士历险记V4.0</a></p>
+                                <p class="size">167M</p>
+                                <p class="time">2018-11-13</p>
+                            </li>
+                            <li>
+                                <p class="dlink"><span>[OLD] </span> <a href="download/焕焕骑士历险记3.0正式版.zip" download="焕焕骑士历险记3.0正式版.zip">焕焕骑士历险记V3.0</a></p>
+                                <p class="size">13.4M</p>
+                                <p class="time">2018-10-12</p>
+                            </li>
+                        </ul>
+                        <div class="li-box">
+                            <p class="small-head">>> 游戏背景 Background</p>
+                            <p class="parag">
+                                红族王国地处色族大陆西北角。
+                            </p>
+                            <p class="parag">
+                                曾于二十年前占领西海岸哨塔的巨龙忽然袭击王城，掠走国王之女琦琦公主。国王派出军队前往西海岸营救公主，空虚的王城却发生了叛乱。
+                                国王的弟弟,将军赤诚发动兵变，将国王一派驱逐出王城。巨龙的绑架和赤诚兵变并非偶然，这背后隐藏着细微的联系和更大的阴谋。
+                            </p>
+                            <p class="parag">
+                                来自南方蓝族的焕焕骑士勇往恶龙城堡，前去援救公主。在骑士和公主搜索国王和其他臣子的过程中，结识了诸多伙伴。大家共同返回王城，希望合力镇压叛乱，
+                                恢复红族政权……
+                            </p>
+                        </div>
+                    </div>
+
+                    <div id="tab2-content" class="hidecontent">
+                        <div class="li-box">
+                            <p class="small-head">>> 攻略 Brochure</p>
+                            <p class="parag">
+                                攻略模块正在建设中。您可以关注我们的微信公众号，查询关于游戏的玩法攻略和更多信息！
+                            </p>
+                            <p class="small-head">>> 软件信息 Environment</p>
+                            <p class="parag">
+                                《焕焕骑士》是一款运行于PC端的冒险小游戏，需要联网来保存游戏进度。可在Windows和Mac系统上运行。<br>
+                                游戏支持中文和英文两种语言，并支持窗口和全屏模式。下载程序包解压缩后，点击.exe文件即可开始运行。
+                            </p>
+                            <p class="small-head">>> 游戏建设 Game Contribute</p>
+                            <p class="parag">
+                                我们欢迎任何关于游戏的反馈建议。您可以搜索关注《焕焕骑士》微信公众号，或通过邮件联系我们。<br>
+                                游戏代码目前已开源，关于代码内容和更多游戏建设的需求，请参考《
+                                <a href="https://mp.weixin.qq.com/s?__biz=MzIwODY2MzMxMA==&mid=2247484020&idx=1&sn=7492919ad40cf1164fd15d1b917ac491&chksm=977ee415a0096d03af4949ad2f7b8e66f87b1ef1455fe88d9f47db7804d6d00f90e89e8cceb0&token=2110918753&lang=zh_CN#rd" class="inner-link">
+                                    关于代码开源、翻译、配音和美术支持
+                                </a>
+                                》。
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div id="tab3-content" class="hidecontent">
+                        <div class="li-box">
+                            <p class="small-head">>> 壁纸库 Wallpaper Pool</p>
+                            <p class="parag">
+                                由于壁纸装饰并不是游戏必须的组件，出于安装包轻便的考虑，从7.3.8版本开始，游戏随安装包仅内置2张壁纸：
+                                【1_Castle Escape_逃脱城堡】【4_Night Ruins_雨夜废墟】<br>
+                                您可以从此处下载更多壁纸！
+                            </p>
+                            <p class="parag">
+                                1. 点击您喜欢的壁纸，右键“另存为”，存储到本地即可。<br>
+                                2. 将下载的图片文件放置在游戏根目录下image/titleBG文件夹中。注意，请不要随意修改文件名和文件格式！<br>
+                                3. 打开您的游戏，就可以在“设置”-“主页壁纸”中找到新下载的壁纸啦！
+                            </p>
+                            <ul class="album" style="overflow-y:scroll;">
+                                <li>
+                                    <img src="wallpaper/1_Castle Escape_逃脱城堡.jpg" class="wallpaper" alt="1_Castle Escape_逃脱城堡">
+                                    <p>1_Castle Escape_逃脱城堡</p>
+                                </li>
+                                <li>
+                                    <img src="wallpaper/4_Night Ruins_雨夜废墟.jpg" class="wallpaper" alt="4_Night Ruins_雨夜废墟">
+                                    <p>4_Night Ruins_雨夜废墟</p>
+                                </li>
+                                <li>
+                                    <img src="wallpaper/1_Fighting Dragon_鏖战巨龙.jpg" class="wallpaper" alt="1_Fighting Dragon_鏖战巨龙">
+                                    <p>1_Fighting Dragon_鏖战巨龙</p>
+                                </li>
+                                <li>
+                                    <img src="wallpaper/2_Cave Lost_洞穴迷踪.jpg" class="wallpaper" alt="2_Cave Lost_洞穴迷踪">
+                                    <p>2_Cave Lost_洞穴迷踪</p>
+                                </li>
+                                <li>
+                                    <img src="wallpaper/3_Into Grave_踏入墓园.jpg" class="wallpaper" alt="3_Into Grave_踏入墓园">
+                                    <p>3_Into Grave_踏入墓园</p>
+                                </li>
+                                <li>
+                                    <img src="wallpaper/4_Hunting Alone_独自狩猎.jpg" class="wallpaper" alt="4_Hunting Alone_独自狩猎">
+                                    <p>4_Hunting Alone_独自狩猎</p>
+                                </li>
+                                <li>
+                                    <img src="wallpaper/5_Northern Preach_布道北国.jpg" class="wallpaper" alt="5_Northern Preach_布道北国">
+                                    <p>5_Northern Preach_布道北国</p>
+                                </li>
+                                <li>
+                                    <img src="wallpaper/3_Home and Mate_风和日丽.jpg" class="wallpaper" alt="3_Home and Mate_风和日丽">
+                                    <p>3_Home and Mate_风和日丽</p>
+                                </li>
+                            </ul>
+                            <p class="small-head">>> 自制壁纸 DIY Papers</p>
+                            <p class="parag">
+                                从7.3.8版本开始，壁纸模块也正式面向玩家开放——您可以自己添加壁纸！
+                                游戏窗口的分辨率为1080x720像素，请尽量使您的创作贴近该尺寸，超出或不足都会造成视觉缺陷。
+                            </p>
+                            <p class="parag">
+                                1. 准备一张大小适宜的.jpg图片。若尺寸和格式不符合，可以使用任何图像编辑工具进行裁剪转换。<br>
+                                2. 将图片命名为如下格式：4_Night Ruins_雨夜废墟.jpg（示例）。<br>
+                                    其中，“4”表示该壁纸相配的自然装饰效果（参照游戏内章节1-7），分别对应为：<br>
+                                    1-红色灰烬；2-黑石下落；3-黑色灰烬；4-雨帘；5-飘雪；6-火花溅射；7-雨帘。<br>
+                                    “Night Ruins”和“雨夜废墟”分别为该壁纸的英文、中文名称。将这三个元素以短下划线连接即可。名称中不要出现下划线。<br>
+                                    注意，命名格式不规范的文件将不会被程序识别！<br>
+                                3. 将图片放置在指定路径：游戏根目录/image/titleBG。<br>
+                                4. 打开您的游戏，就可以在“设置”-“主页壁纸”中找到您的DIY壁纸啦！
+                            </p>
+                        </div>
+                    </div>
+
+                    <div id="tab4-content" class="hidecontent">
+                        <div class="li-box">
+                            <p class="parag">
+                                这是最早的网页版《焕焕骑士》，制作于2018年9月。采用原生Javascript代码编写而成。<br>
+                                初次启动游戏需下载多媒体资源，可能加载较慢，请耐心等待！
+                            </p>
+                            <p class="small-head">>> 操作说明 Instructions</p>
+                            <p class="parag">
+                                W/A/S/D键控制骑士上/下/左/右移动。J键射击。K键跳跃。<br>
+                                游戏目标：寻找连接门，前往下一层。注意躲避恶龙和火球！
+                            </p>
+                            <iframe src="WebGame/Advent_Knight_Throde.html"></iframe>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <!--#main-->
+            
+            <!--信息区域2：侧边资讯栏-->
+            <section class="sidebar">
+                <h3 class="small-head">游戏资讯</h3>
+                <div class="sidebox-chunk">
+                    <div class="sidebox">
+                        <div><img src="image/cov0.jpg" alt="7.3.8小补丁：吹起号角向前冲！"></div>
+                        <small>更新说明</small>
+                        <a href="https://mp.weixin.qq.com/s?__biz=MzIwODY2MzMxMA==&mid=2247484034&idx=1&sn=37ab7f707091f751fffa52e510604316&chksm=977ee4e3a0096df5016b8dbc8160c960f86ff8821dea4a98813b2c52367ff94ef4ea5ea0a93b&token=165863426&lang=zh_CN#rd">
+                            7.3.8小补丁：吹起号角向前冲！
+                        </a>
+                        <small>2021年1月8日</small>
+                    </div>
+                    <div class="sidebox">
+                        <div><img src="image/cov3.jpg" alt="关于代码开源、翻译、配音和美术支持"></div>
+                        <small>动态</small>
+                        <a href="https://mp.weixin.qq.com/s?__biz=MzIwODY2MzMxMA==&mid=2247484020&idx=1&sn=7492919ad40cf1164fd15d1b917ac491&chksm=977ee415a0096d03af4949ad2f7b8e66f87b1ef1455fe88d9f47db7804d6d00f90e89e8cceb0&token=2110918753&lang=zh_CN#rd">
+                            关于代码开源、翻译、配音和美术支持
+                        </a>
+                        <small>2020年12月24日</small>
+                    </div>
+                    <div class="sidebox">
+                        <div><img src="image/cov1.jpg" alt="走进凛冽寒风！冬日雪山主题更新"></div>
+                        <small>更新说明</small>
+                        <a href="https://mp.weixin.qq.com/s?__biz=MzIwODY2MzMxMA==&mid=2247483989&idx=1&sn=aa719f7d5db0efa3c248bce836a5c3e8&chksm=977ee434a0096d225c3aadc274eeeee8139fcac397cbf7d1fa780ad2ef5c484449d5f68b09ce&token=522879832&lang=zh_CN#rd">
+                            走进凛冽寒风！冬日雪山主题更新
+                        </a>
+                        <small>2020年12月20日</small>
+                    </div>
+                    <div class="sidebox">
+                        <div><img src="image/cov2.jpg" alt="国王石像守护者：冬日更新更多内容"></div>
+                        <small>更新说明</small>
+                        <a href="https://mp.weixin.qq.com/s?__biz=MzIwODY2MzMxMA==&mid=2247484007&idx=1&sn=23e3f804c9ae337acc1708d124dc7e20&chksm=977ee406a0096d106fae7ed800cea3cbb67ccdc5b228f2c4d3a791438cfa9615f93c2d4f861b&token=522879832&lang=zh_CN#rd">
+                            国王石像守护者：冬日更新更多内容
+                        </a>
+                        <small>2020年12月21日</small>
+                    </div>
+                </div>
+
+                <h3 class="small-head">关注我们</h3>
+                <div class="sidebox-chunk">
+                    <div class="sidebox">
+                        <div><img src="image/公众号二维码.jpg"></div>
+                        <p class="parag">公众号名称：<br><span>焕焕骑士</span></p>
+                        <p class="parag">微信号：<br><span>KnightThrode</span></p>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
+    </div> <!--#page-->
+
+    <!--页脚-->
+    <div class="footer">
+        <p class="minor_text">Poster: Daohuan Liu</p>
+        <p class="minor_text">Contact Us: throde1998@163.com</p>
+        <a href="http://www.beian.miit.gov.cn/" class="minor_text">赣ICP备20009996号</a>
+        <a class="minor_text" target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=36010402000098" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;">
+            <img src="image/beian.png" style="float:left;"/>
+            <p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px;">赣公网安备 36010402000098号</p>
+        </a>
+    </div>
+    
+    <!--简易脚本-->
+    <script type="text/javascript">
+        //********js绑定事件*********
+        let button1 = document.getElementById("more")
+        button1.onclick = function() {
+            //判断操作类型
+            let displayMode = "none"
+            if (button1.innerText=="所有版本") {
+                button1.innerText = "收起"
+                displayMode = "block"
+            } else if (button1.innerText=="收起") {
+                button1.innerText = "所有版本"
+                displayMode = "none"
+            }
+            // 寻找所有并设置
+            var hids = document.getElementsByClassName("hid-item");
+            for (i=0; i<hids.length; i++) {
+                hids[i].style.display = displayMode;
+            }
+        }
+
+        //******定义切换标签栏的全局工具函数********
+        function switchTag() {
+            let tag=this.id;
+            let content=this.id+"-content";
+            //alert(tag+" "+content);
+            for (i=1; i<5; i++) {
+                if ("tab"+i==tag) {
+                    document.getElementById(tag).getElementsByTagName("div")[0].className="selectli";
+                } else {
+                    document.getElementById("tab"+i).getElementsByTagName("div")[0].className="";//getElementsByTagName("div")[0].
+                }
+                if ("tab"+i+"-content"==content) {
+                    document.getElementById(content).className="";
+                } else {
+                    document.getElementById("tab"+i+"-content").className="hidecontent";
+                }
+                document.getElementById("content").className=content;
+            }
+            //this.blur();
+        }
+        //绑定
+        let tabs = document.getElementsByClassName("content-tab");
+        for (i=0; i<tabs.length; i++) {
+            tabs[i].onclick = switchTag;
+        }
+    </script>
+
 </body>
+
 </html>
