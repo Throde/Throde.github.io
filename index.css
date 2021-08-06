@@ -19,7 +19,7 @@ body {
 }
 .minor_text {
     text-decoration: none;
-    font-size: 14px;
+    font-size: 16px;
     color: lightgray;
     margin: 0 18px;
 }
@@ -39,6 +39,7 @@ a:hover {
 div.banner {
     position: relative;
     height: 320px;
+    min-width: 1280px;
     box-shadow: .2em .2em .5em #3F3F3F;
     font-size: 0em;
     overflow: hidden;
@@ -46,35 +47,28 @@ div.banner {
 div.banner-pic {
     display: inline-block;
     width: 100%;
+    min-width: 100%;
     height: 100%;
-    text-align: center;
 }
-img.banner-pic {
+img#banner-pic {
     width: 100%;
     height: auto;
     min-height: 100%;
 }
 /*标题部分*/
-img#game-titleC {
+img#logo {
     position: absolute;
-    height: 100px;
-    bottom: 20px;
-    left: 40px;
-}
-div#title-bg {
-    position: absolute;
-    width: 100%;
-    height: 75px;
-    bottom: 25px;
-    left: 0px;
-    background-color: rgba(243, 239, 239, 0.6);
+    height: 160px;
+    /*居中*/
+    left:0; right:0; top:0; bottom:0;
+    margin:auto;
 }
 
 
 /*内容区域*/
 h3.small-head {
-    margin-top: 15px;
-    margin-bottom: 5px;
+    margin-top: 20px;
+    margin-bottom: 10px;
     /*font-weight: bold;*/
 }
 p.parag {
@@ -111,10 +105,6 @@ li.text-block {
     display: block;
 }
 
-span {
-    color: rgb(105, 105, 105);
-}
-
 /**特殊元素**/
 button#more {
     position: absolute;
@@ -149,52 +139,44 @@ img#miniprogram {
     padding: 20px;
 }
 
-#main #title {
-    height: 48px;
+#main #tabs {
+    height: 36px;
 }
-#main #title ul {
+#main #tabs ul {
     height: 100%;
-    background-color: rgb(240, 240, 240);
     /**横排居中**/
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
 }
-#main #title li {
+#main #tabs li {
     width: 240px;
     height: 100%;
     list-style-type: none;
-    line-height: 22px;
+    line-height: 36px;
     text-align: center;
-}
-#main #title .content-tab div {
     text-decoration: none;
-    width: auto;
-    height: 100%;
-    color: #000000;
     display: block;
-    padding: 3px 2px;
+    font-weight: bold;
 }
-#main #title .content-tab div:hover {
-    color: lightgrey;
-    display: block;
-    width: auto;
-    background: lightgrey;
+#main #tabs li:hover {
+    cursor: pointer;
+    border-bottom: 4px solid #205d9b;
 }
-#main #title .selectli {
-    display: block;
-    color: #ffffff;
-    background: lemonchiffon;
-    display: block;
-    width: auto;
+#main #tabs li.selectli {
+    color: #205d9b;
+    border-bottom: 4px solid #205d9b;
+    background-color: rgba(243, 239, 239, 0.4);
 }
+
 
 #main #content {
     height: 730px; 
+    margin-top: 4px;
     padding: 10px; 
 }
 .tab1-content {
-    border-width: 2px;
+    border-width: 0px;
     border-style: solid;
     border-color: #3A81C8;
     background-color: #DFEBF7;
@@ -202,62 +184,26 @@ img#miniprogram {
     position: relative;
 }
 .tab2-content {
-    border-width: 2px;
+    border-width: 0px;
     border-style: solid;
-    border-color: #ff950b;
-    background-color: #FFECD2;
+    border-color: #3A81C8;
+    background-color: #DFEBF7;
     
     position: relative;
 }
 .tab3-content {
-    border-width: 2px;
+    border-width: 0px;
     border-style: solid;
-    border-color: #FE74B8;
-    background-color: #FFECF5;
+    border-color: #3A81C8;
+    background-color: #DFEBF7;
 
     position: relative;
 }
-ul.album{
-    margin-top: 8px auto;
-    width: 700px;
-    height: 210px;
-    background-color: rgba(255,255,255,0.8);
-}
-ul.album li{
-    display: block;
-    float: left;
-    width: 210px;
-    height: 140px;
-    overflow: hidden;
-    margin-left: 12px;
-    margin-bottom: 12px;
-    position: relative;
-}
-ul.album li:hover{
-    -webkit-box-shadow: .2em .2em .5em #3F3F3F;
-    box-shadow: .2em .2em .5em #3F3F3F;
-}
-ul.album li p {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    padding: .25em;
-    font-size: .8em;
-    background: black;/*备用*/
-    background: linear-gradient(transparent,black);
-    color: white;
-    display: block;
-    width: 100%;
-}
-img.wallpaper{
-    height: 100%;/*图片尺寸一律为448px*320px，或者为该尺寸的倍数*/
-}
-
 .tab4-content {
-    border-width: 2px;
+    border-width: 0px;
     border-style: solid;
-    border-color: #00988B;
-    background-color: #E8FFFD;
+    border-color: #3A81C8;
+    background-color: #DFEBF7;
 
     position: relative;
 }
@@ -316,7 +262,21 @@ div.sidebox a:hover{
 
 
 /**unused**/
+/*
+.content2 {
+    border-color: #ff950b;
+    background-color: #FFECD2;
+}
+.content3 {
+    border-color: #FE74B8;
+    background-color: #FFECF5;
+}
+.content4 {
+    border-color: #00988B;
+    background-color: #E8FFFD;
+}
 .content5 {
     border-color: #A8BC1F;
     background-color: #F7FAE2;
 }
+*/
