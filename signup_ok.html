@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>《卡牌传说》注册成功页</title>
+    <link rel="stylesheet" href="index.css"/>
+</head>
+
+<body>
+    <!--页眉-->
+    <div class="header">
+        <a class="minor_text" href="https://mp.weixin.qq.com/mp/homepage?__biz=MzIwODY2MzMxMA==&hid=3&sn=458aa6e04d270bec529ddbcd3d4939a6&scene=18">
+            新闻中心
+        </a>
+        <a class="minor_text" href="https://space.bilibili.com/498375512">
+            哔哩哔哩
+        </a>
+        <a class="minor_text" href="https://www.zhihu.com/people/liu-dao-huan">
+            知乎
+        </a>
+        <a class="minor_text" href="https://github.com/Throde">
+            Github
+        </a>
+    </div>
+
+    <!--正文-->
+    <div class="page">
+
+        <!--信息区域-->
+        <div class="container" >
+            <p>《卡牌传说》邮箱注册/修改成功！</p>
+        </div>
+
+    </div> <!--#page-->
+
+    <!--页脚-->
+    <div class="footer">
+        <p class="minor_text">所有者: Daohuan Liu</p>
+        <p class="minor_text">联系邮箱: throde1998@163.com</p>
+        <!--<a href="http://www.beian.miit.gov.cn/" class="minor_text">赣ICP备20009996号</a>
+        <a class="minor_text" target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=36010402000098" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;">
+            <img src="image/beian.png" style="float:left;"/>
+            <p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px;">赣公网安备 36010402000098号</p>-->
+        </a>
+    </div>
+    
+    <!--简易脚本-->
+    <script type="text/javascript">
+        //********js绑定事件*********
+        // let button1 = document.getElementById("more")
+        // button1.onclick = function() {
+        //     //判断操作类型
+        //     let displayMode = "none"
+        //     if (button1.innerText=="所有版本") {
+        //         button1.innerText = "收起"
+        //         displayMode = "block"
+        //     } else if (button1.innerText=="收起") {
+        //         button1.innerText = "所有版本"
+        //         displayMode = "none"
+        //     }
+        //     // 寻找所有并设置
+        //     var hids = document.getElementsByClassName("hid-item");
+        //     for (i=0; i<hids.length; i++) {
+        //         hids[i].style.display = displayMode;
+        //     }
+        // }
+
+        //******定义切换标签栏的全局工具函数********
+        function switchTag() {
+            let tag=this.id;
+            let content=this.id+"-content";
+            //alert(tag+" "+content);
+            for (i=1; i<5; i++) {
+                if ("tab"+i==tag) {
+                    document.getElementById(tag).classList.add("selectli");
+                } else {
+                    document.getElementById("tab"+i).classList.remove("selectli");//getElementsByTagName("div")[0].className="";//getElementsByTagName("div")[0].
+                }
+                if ("tab"+i+"-content"==content) {
+                    document.getElementById(content).className="";
+                } else {
+                    document.getElementById("tab"+i+"-content").className="hidecontent";
+                }
+                document.getElementById("content").className=content;
+            }
+            //this.blur();
+        }
+        //绑定
+        let tabs = document.getElementById("tabs").getElementsByTagName("li");
+        for (i=0; i<tabs.length; i++) {
+            tabs[i].onclick = switchTag;
+        }
+    </script>
+
+
+</body>
+
+</html>
