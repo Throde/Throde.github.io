@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <title>《卡牌传说》注册成功页</title>
     <link rel="stylesheet" href="index.css"/>
+    <link rel="stylesheet" href="signup_ok.css"/>
 </head>
 
 <body>
@@ -28,7 +29,11 @@
 
         <!--信息区域-->
         <div class="container" >
-            <p>《卡牌传说》邮箱注册/修改成功！</p>
+            
+            <div id="info">
+                <p>《卡牌传说》邮箱注册/修改成功！</p>
+            </div>
+            
         </div>
 
     </div> <!--#page-->
@@ -46,49 +51,12 @@
     
     <!--简易脚本-->
     <script type="text/javascript">
-        //********js绑定事件*********
-        // let button1 = document.getElementById("more")
-        // button1.onclick = function() {
-        //     //判断操作类型
-        //     let displayMode = "none"
-        //     if (button1.innerText=="所有版本") {
-        //         button1.innerText = "收起"
-        //         displayMode = "block"
-        //     } else if (button1.innerText=="收起") {
-        //         button1.innerText = "所有版本"
-        //         displayMode = "none"
-        //     }
-        //     // 寻找所有并设置
-        //     var hids = document.getElementsByClassName("hid-item");
-        //     for (i=0; i<hids.length; i++) {
-        //         hids[i].style.display = displayMode;
-        //     }
-        // }
-
-        //******定义切换标签栏的全局工具函数********
-        function switchTag() {
-            let tag=this.id;
-            let content=this.id+"-content";
-            //alert(tag+" "+content);
-            for (i=1; i<5; i++) {
-                if ("tab"+i==tag) {
-                    document.getElementById(tag).classList.add("selectli");
-                } else {
-                    document.getElementById("tab"+i).classList.remove("selectli");//getElementsByTagName("div")[0].className="";//getElementsByTagName("div")[0].
-                }
-                if ("tab"+i+"-content"==content) {
-                    document.getElementById(content).className="";
-                } else {
-                    document.getElementById("tab"+i+"-content").className="hidecontent";
-                }
-                document.getElementById("content").className=content;
-            }
-            //this.blur();
-        }
-        //绑定
-        let tabs = document.getElementById("tabs").getElementsByTagName("li");
-        for (i=0; i<tabs.length; i++) {
-            tabs[i].onclick = switchTag;
+        function height_adaptive(){
+            var main=$(document).height();
+            var title=document.getElementById("login_title").scrollHeight;
+            var body=document.getElementById("login_body").scrollHeight;
+            var bottom=main-title-body;
+            $("#login_bottom").height(bottom);
         }
     </script>
 
