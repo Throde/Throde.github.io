@@ -7,7 +7,7 @@ html, body {
 
 .page {
     height: 100%;
-    width: 960px;
+    width: auto;
 }
 
 .container {
@@ -22,5 +22,4 @@ div#info{
     text-align: center;
     height: 24px;
     /*background-color: brown;*/
-    transform: translateY(-50%)
 }
